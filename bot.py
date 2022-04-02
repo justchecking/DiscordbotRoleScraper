@@ -45,35 +45,8 @@ async def on_ready():
 
                     
                   
-                            
-                                   
-                               
-                           
+      
 
-
-
-    
-
-
-    
-   
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-client.run('OTU5MzAxOTkzMTg3Mzk3NjQy.YkZ5mg.onSHsqGmIybb5-xSKZ05jrQZ6w8')
+client.run('Token')
 
 
