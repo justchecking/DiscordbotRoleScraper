@@ -1,0 +1,2 @@
+# DiscordbotRoleScraper
+ Basic role scraper
