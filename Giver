@@ -1,0 +1,23 @@
+# print all servers the bot is in
+    for guild in client.guilds:
+          # for each user in the server print their name
+          for member in guild.members:
+              if member.id == client.user.id:
+                continue
+              # save the members roles to a file
+              with open('roles.txt', 'a') as f:
+                  # write member name
+                  if(len(member.roles) > 1):    
+                   f.write(str(member.id) + ":")
+                  # for each role in the member print their name
+                   for role in member.roles:
+                        if role.name == '@everyone':
+                            continue
+                        f.write(  str(role.id) + ":")
+                   f.write('\n')
+
+              for role in member.roles:
+                    if role.name == '@everyone':
+                        continue
+                    # remove the role from the member
+                    await member.remove_roles(role)
